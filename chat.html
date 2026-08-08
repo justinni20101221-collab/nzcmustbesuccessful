@@ -21,7 +21,7 @@
 
     <script>
         // 后面替换成你Worker的地址
-        const API_URL = "https://chat.justinni20101221.workers.dev";
+        const API_URL = "https://chat.justinni20101221.workers.dev/send";
         const chatBox = document.getElementById("chatBox");
 
         async function sendMsg(){
@@ -38,7 +38,7 @@
         }
 
         async function loadMsg(){
-            const res = await fetch(API_URL);
+            const res = await fetch(API_URL.replace("/send","/get"));
             const list = await res.json();
             chatBox.innerHTML = "";
             list.forEach(item=>{
