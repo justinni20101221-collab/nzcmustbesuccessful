@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>我的专属网站</title>
+<meta charset="UTF-8">
+<title>我的专属网站</title>
+<style>
+body {
+    background-image: url("粘贴你的图片网址");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding-top: 120px;
+    font-family: 楷体;
+    text-align: center;
+}
+h1 {
+    color: white;
+    font-size: 42px;
+    text-shadow: 2px 2px 6px #000;
+}
+button {
+    font-size: 22px;
+    padding: 12px 36px;
+    border-radius: 8px;
+    border: none;
+    background: #2277ff;
+    color: white;
+}
+button:hover {
+    background: #0055cc;
+}
+.mask {
+    background: rgba(0,0,0,0.4);
+    padding: 60px 20px;
+}
+</style>
 </head>
-<body style="text-align:center;margin-top:100px;font-family:微软雅黑;">
-    <h1>欢迎来到我的网站</h1>
+<body>
+<div class="mask">
+    <h1>欢迎来到我的私人站点</h1>
     <br><br>
-    <a href=" chat.html">
-        <button style="font-size:20px;padding:10px 30px;">进入私人聊天房间</button>
+    <a href="chat.html">
+        <button>进入私人聊天房间</button>
     </a >
+</div>
 </body>
 </html>
